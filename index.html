@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="lib/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Welcome</title>
+
+</head>
+
+<body>
+  <div class="container-fluid" id="overlay">
+
+  </div>
+  <div class="container" id="loginFormContainer">
+    <div class="row">
+      <div class="absolute-center is-responsive login-form">
+        <div id="logo-container"></div>
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+          <form action="" id="loginForm">
+            <div class="form-group">
+              <label for="username">Gitlab Username:</label>
+              <input class="form-control" type="text" name='username' placeholder="Username" />
+            </div>
+            <div class="form-group">
+              <label for="token">Gitlab Access Token:</label>
+              <input class="form-control" type="text" name='token' placeholder="Access Token" />
+            </div>
+
+
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="rememberMe"> Remember Me
+              </label>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </div>
+
+          </form>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <div class="container" id="repositorySelectionContainer">
+    <div class="row">
+      <div class="absolute-center is-responsive login-form">
+        <div id="logo-container"></div>
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+          <form action="" id="repoForm">
+
+
+            <div class="form-group">
+              <label for="repositorySelect">Select Repository: </label>
+              <select class="form-control" id="repositorySelect">
+              </select>
+            </div>
+
+
+            <div class="form-group" id="defaultLoc">
+              <label for="default_location">Yaml File Location: </label>
+              <input class="form-control" type="text" name='default_location' placeholder="Default Location" />
+              </select>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-danger btn-block" id="logOut"> Logout</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="lib/jquery-3.4.1.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+
+ <script src="lib/app.js"></script>
+</body>
+
+</html>
