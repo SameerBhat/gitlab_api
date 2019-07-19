@@ -20,7 +20,7 @@
 
 
   <style>
-    #file_editor {
+    #file_creator {
       display: none;
     }
   </style>
@@ -44,7 +44,18 @@
 
     <div class="collapse navbar-collapse" id="navbarColor03">
       <ul class="navbar-nav mr-auto">
-      
+        <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li> -->
       </ul>
       <div class="form-inline my-2 my-lg-0">
 
@@ -55,12 +66,12 @@
 
 
 
-  <div class="container-fluid" id="file_editor">
+  <div class="container-fluid" id="file_creator">
     <div class="row">
       <div class="absolute-center is-responsive editor">
 
         <div class="col-sm-12 col-md-10 col-md-offset-1">
-          <form action="" id="editor_form">
+          <form action="" id="creator_form">
             <label for="username">File Location: </label>
             <div class="form-group input-group">
 
@@ -131,7 +142,7 @@
   alert("cannot load the page");
 } else {
   var defaultLocation = file_location;
-  setUpCodeEditor(projectId, token);
+  setUpCodeCreator(projectId, token);
 }
   </script>
 </body>
